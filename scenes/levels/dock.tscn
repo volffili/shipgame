@@ -1,0 +1,105 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://gfx/ship/pier-Sheet.png" type="Texture" id=1]
+[ext_resource path="res://gfx/ship/shipsailsup.png" type="Texture" id=2]
+[ext_resource path="res://materials/floating_material.tres" type="Material" id=3]
+[ext_resource path="res://gfx/ship/pierguysheet.png" type="Texture" id=4]
+[ext_resource path="res://gfx/ship/pier_reflection.png" type="Texture" id=5]
+[ext_resource path="res://scenes/subscenes/carousel/carousel.tscn" type="PackedScene" id=6]
+[ext_resource path="res://materials/mirror_material.tres" type="Material" id=7]
+[ext_resource path="res://scenes/levels/dock.gd" type="Script" id=8]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 1 )
+region = Rect2( 293, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 586, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 879, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 1172, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 1465, 0, 293, 207 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 1758, 0, 293, 207 )
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 7 ), SubResource( 6 ), SubResource( 5 ), SubResource( 4 ), SubResource( 3 ), SubResource( 2 ), SubResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 15, 39 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 4 )
+region = Rect2( 15, 0, 15, 39 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 4 )
+region = Rect2( 30, 0, 15, 39 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 4 )
+region = Rect2( 45, 0, 15, 39 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 4 )
+region = Rect2( 60, 0, 15, 39 )
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Dock" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="DockReflection" type="Sprite" parent="."]
+material = ExtResource( 7 )
+position = Vector2( 329, 509.5 )
+texture = ExtResource( 5 )
+
+[node name="Carousel" parent="." instance=ExtResource( 6 )]
+position = Vector2( 320, 320 )
+
+[node name="ShipSailsUp" type="Sprite" parent="."]
+material = ExtResource( 3 )
+position = Vector2( 362, 150.5 )
+texture = ExtResource( 2 )
+
+[node name="Pier" type="AnimatedSprite" parent="."]
+position = Vector2( 320, 248.5 )
+frames = SubResource( 8 )
+frame = 11
+playing = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 354, 277.5 )
+frames = SubResource( 14 )
+frame = 2
+playing = true

@@ -1,0 +1,89 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://gfx/ship/man_anim_spriteframe.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://materials/floating_material.tres" type="Material" id=2]
+[ext_resource path="res://gfx/ship/shipnaked.png" type="Texture" id=3]
+[ext_resource path="res://gfx/ship/sail1.png" type="Texture" id=5]
+[ext_resource path="res://gfx/ship/flag_anim.png" type="Texture" id=7]
+[ext_resource path="res://materials/sail_material.tres" type="Material" id=8]
+[ext_resource path="res://gfx/ship/sail2.png" type="Texture" id=9]
+[ext_resource path="res://gfx/ship/ropehide.png" type="Texture" id=10]
+[ext_resource path="res://gfx/ship/ropes.png" type="Texture" id=11]
+[ext_resource path="res://materials/rope_material.tres" type="Material" id=12]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 50, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 7 )
+region = Rect2( 50, 0, 50, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 7 )
+region = Rect2( 100, 0, 50, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 7 )
+region = Rect2( 150, 0, 50, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 7 )
+region = Rect2( 200, 0, 50, 32 )
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "Wind",
+"speed": 7.0
+} ]
+
+[node name="Ship" type="Node2D"]
+material = SubResource( 1 )
+
+[node name="Sail1" type="Sprite" parent="."]
+material = ExtResource( 8 )
+position = Vector2( -3, -25 )
+texture = ExtResource( 5 )
+
+[node name="Sail2" type="Sprite" parent="."]
+material = ExtResource( 8 )
+position = Vector2( 17, -98 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="ShipSprite" type="Sprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( -113, -172 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Ropes" type="Sprite" parent="."]
+material = ExtResource( 12 )
+position = Vector2( -112, -172 )
+texture = ExtResource( 11 )
+centered = false
+
+[node name="Ropehide" type="Sprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( -113, -172 )
+texture = ExtResource( 10 )
+centered = false
+
+[node name="Flag" type="AnimatedSprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( -6, -86 )
+frames = SubResource( 7 )
+animation = "Wind"
+frame = 4
+playing = true
+
+[node name="Observer" type="AnimatedSprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( 10, -67 )
+frames = ExtResource( 1 )
+animation = "Idle"
+playing = true
