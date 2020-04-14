@@ -1,3 +1,3 @@
 # shipgame
 
-Check it out [here](https://https://volffili.github.io/shipgame/)!
+Check it out [here](https://volffili.github.io/shipgame/)!
