@@ -9,6 +9,7 @@ var rot : float = 0;
 var target_angle : float = 0;
 var sin_multiplier := 0.5;
 var state := "input";
+var selected := 0
 
 func _ready():
 	set_process_input(true);
@@ -38,10 +39,12 @@ func _refresh_positions():
 
 func rotate_left():
 	state = "interpolating";
+	selected = (selected + 1) % items.size()
 	target_angle = rot + 2*PI/items.size();
 	
 func rotate_right():
 	state = "interpolating";
+	selected = (selected - 1) % items.size()
 	target_angle = rot - 2*PI/items.size();
 	
 func insert(item):

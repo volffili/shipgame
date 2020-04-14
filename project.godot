@@ -21,7 +21,15 @@ _global_script_class_icons={
 [application]
 
 config/name="ShipGame"
-run/main_scene="res://scenes/levels/ship_choose_destination.tscn"
+run/main_scene="res://scenes/levels/dock.tscn"
+
+[autoload]
+
+PortRoyal="*res://scripts/state/ports/PortRoyal.gd"
+Tortuga="*res://scripts/state/ports/Tortuga.gd"
+Margarita="*res://scripts/state/ports/Margarita.gd"
+Map="*res://scripts/state/Map.gd"
+Ship="*res://scripts/state/Ship.gd"
 
 [display]
 

@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://materials/mirror_material.tres" type="Material" id=1]
-[ext_resource path="res://gfx/ship/reflection.png" type="Texture" id=2]
-[ext_resource path="res://scenes/subscenes/carousel/carousel.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/subscenes/ship.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/subscenes/ui/ui.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/levels/ship_choose_destination.gd" type="Script" id=7]
+[ext_resource path="res://scenes/subscenes/ui/ui.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/subscenes/carousel/carousel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/subscenes/ship.tscn" type="PackedScene" id=3]
+[ext_resource path="res://gfx/ship/reflection.png" type="Texture" id=4]
+[ext_resource path="res://scenes/levels/open_sea.gd" type="Script" id=5]
+[ext_resource path="res://materials/mirror_material.tres" type="Material" id=6]
 
 [sub_resource type="Image" id=4]
 data = {
@@ -53,20 +53,20 @@ margin_left = -1.0
 margin_top = -1.0
 margin_right = -1.0
 margin_bottom = -1.0
-script = ExtResource( 7 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Reflection" type="Sprite" parent="."]
-material = ExtResource( 1 )
+material = ExtResource( 6 )
 position = Vector2( 297, 525 )
-texture = ExtResource( 2 )
+texture = ExtResource( 4 )
 
-[node name="Carousel" parent="." instance=ExtResource( 3 )]
+[node name="Carousel" parent="." instance=ExtResource( 2 )]
 position = Vector2( 311, 320 )
 
-[node name="Ship" parent="." instance=ExtResource( 4 )]
+[node name="Ship" parent="." instance=ExtResource( 3 )]
 material = null
 position = Vector2( 296, 200 )
 
@@ -79,7 +79,7 @@ __meta__ = {
 "_editor_description_": ""
 }
 
-[node name="UI" parent="." instance=ExtResource( 6 )]
+[node name="UI" parent="." instance=ExtResource( 1 )]
 margin_left = 3.0
 margin_top = 1.0
 margin_right = 3.0
