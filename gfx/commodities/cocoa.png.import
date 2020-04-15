@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pier_reflection.png-97e0bd0705b988a036beb0c04fbcba0c.stex"
+path="res://.import/cocoa.png-ce860fe7165d611d2e7bb3a4ee254b38.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/ship/pier_reflection.png"
-dest_files=[ "res://.import/pier_reflection.png-97e0bd0705b988a036beb0c04fbcba0c.stex" ]
+source_file="res://gfx/commodities/cocoa.png"
+dest_files=[ "res://.import/cocoa.png-ce860fe7165d611d2e7bb3a4ee254b38.stex" ]
 
 [params]
 

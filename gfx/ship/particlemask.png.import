@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tobacco.png-dbc41f4a7e33786f4627f41a72c5c302.stex"
+path="res://.import/particlemask.png-48d8633fe96f4974d55b534c943bf8d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/resources/tobacco.png"
-dest_files=[ "res://.import/tobacco.png-dbc41f4a7e33786f4627f41a72c5c302.stex" ]
+source_file="res://gfx/ship/particlemask.png"
+dest_files=[ "res://.import/particlemask.png-48d8633fe96f4974d55b534c943bf8d2.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

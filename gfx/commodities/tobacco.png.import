@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheat.png-ad3ae45390757e54140502c8e8206193.stex"
+path="res://.import/tobacco.png-da71fe455be8e1f943ced033cbaf1aa8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/resources/wheat.png"
-dest_files=[ "res://.import/wheat.png-ad3ae45390757e54140502c8e8206193.stex" ]
+source_file="res://gfx/commodities/tobacco.png"
+dest_files=[ "res://.import/tobacco.png-da71fe455be8e1f943ced033cbaf1aa8.stex" ]
 
 [params]
 

@@ -1,15 +1,15 @@
 [gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://gfx/ship/man_anim_spriteframe.tres" type="SpriteFrames" id=1]
-[ext_resource path="res://materials/floating_material.tres" type="Material" id=2]
+[ext_resource path="res://materials/floating_sea.tres" type="Material" id=2]
 [ext_resource path="res://gfx/ship/shipnaked.png" type="Texture" id=3]
 [ext_resource path="res://gfx/ship/sail1.png" type="Texture" id=5]
 [ext_resource path="res://gfx/ship/flag_anim.png" type="Texture" id=7]
-[ext_resource path="res://materials/sail_material.tres" type="Material" id=8]
+[ext_resource path="res://materials/sails_wind.tres" type="Material" id=8]
 [ext_resource path="res://gfx/ship/sail2.png" type="Texture" id=9]
 [ext_resource path="res://gfx/ship/ropehide.png" type="Texture" id=10]
 [ext_resource path="res://gfx/ship/ropes.png" type="Texture" id=11]
-[ext_resource path="res://materials/rope_material.tres" type="Material" id=12]
+[ext_resource path="res://materials/ropes_wind.tres" type="Material" id=12]
 
 [sub_resource type="ShaderMaterial" id=1]
 

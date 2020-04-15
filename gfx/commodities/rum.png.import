@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pierguysheet.png-062bea6f495a18fe5effeff51e1b8970.stex"
+path="res://.import/rum.png-4566ba6a778a528ea94211b73ce61066.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/ship/pierguysheet.png"
-dest_files=[ "res://.import/pierguysheet.png-062bea6f495a18fe5effeff51e1b8970.stex" ]
+source_file="res://gfx/commodities/rum.png"
+dest_files=[ "res://.import/rum.png-4566ba6a778a528ea94211b73ce61066.stex" ]
 
 [params]
 

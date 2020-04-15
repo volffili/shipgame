@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Reference",
 "class": "Calendar",
 "language": "GDScript",
-"path": "res://scripts/ui/calendar.gd"
+"path": "res://general_scripts/calendar.gd"
 } ]
 _global_script_class_icons={
 "Calendar": ""
@@ -21,15 +21,15 @@ _global_script_class_icons={
 [application]
 
 config/name="ShipGame"
-run/main_scene="res://scenes/levels/dock.tscn"
+run/main_scene="res://scenes/levels/dock/dock.tscn"
 
 [autoload]
 
-PortRoyal="*res://scripts/state/ports/PortRoyal.gd"
-Tortuga="*res://scripts/state/ports/Tortuga.gd"
-Margarita="*res://scripts/state/ports/Margarita.gd"
-Map="*res://scripts/state/Map.gd"
-Ship="*res://scripts/state/Ship.gd"
+PortRoyal="*res://general_scripts/state/ports/port_royal.gd"
+Tortuga="*res://general_scripts/state/ports/tortuga.gd"
+Margarita="*res://general_scripts/state/ports/margarita.gd"
+Map="*res://general_scripts/state/map.gd"
+Ship="*res://general_scripts/state/ship.gd"
 
 [display]
 

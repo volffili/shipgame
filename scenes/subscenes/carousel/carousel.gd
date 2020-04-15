@@ -1,6 +1,6 @@
 extends Node2D
 
-const Util = preload("util.gd");
+const Util = preload("res://general_scripts/util.gd");
 onready var text_item = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 
 var items := [];

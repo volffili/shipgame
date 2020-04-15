@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pier.png-72d3476b27cd1d6817b40d8ed59ba067.stex"
+path="res://.import/pier_guy_anim.png-6b79a936a89f7d8feae53fce90cf4297.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/ship/pier.png"
-dest_files=[ "res://.import/pier.png-72d3476b27cd1d6817b40d8ed59ba067.stex" ]
+source_file="res://gfx/dock/pier_guy_anim.png"
+dest_files=[ "res://.import/pier_guy_anim.png-6b79a936a89f7d8feae53fce90cf4297.stex" ]
 
 [params]
 

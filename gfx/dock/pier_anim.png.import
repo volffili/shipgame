@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/timber.png-1268373f0880dcb43d41ecbcac6e9a4e.stex"
+path="res://.import/pier_anim.png-ddb652da81ce3b12c0151efac2cf6552.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/resources/timber.png"
-dest_files=[ "res://.import/timber.png-1268373f0880dcb43d41ecbcac6e9a4e.stex" ]
+source_file="res://gfx/dock/pier_anim.png"
+dest_files=[ "res://.import/pier_anim.png-ddb652da81ce3b12c0151efac2cf6552.stex" ]
 
 [params]
 
