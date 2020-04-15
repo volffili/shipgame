@@ -3,6 +3,8 @@ extends Node2D
 const Util = preload("res://general_scripts/util.gd");
 onready var text_item = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 
+signal carousel_accept
+
 var items := [];
 var radius := 128;
 var rot : float = 0;
@@ -18,6 +20,8 @@ func _input(event):
 	if(state != "input"):
 		return;
 		
+	if event.is_action_pressed("ui_accept"):
+		emit_signal("carousel_accept")
 	if event.is_action("ui_left"): 
 		rotate_left();
 	if event.is_action("ui_right"): 
