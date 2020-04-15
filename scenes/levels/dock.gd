@@ -1,26 +1,15 @@
 extends Node2D
 
 onready var carousel = $Carousel;
-onready var item_destination = preload("res://scenes/subscenes/carousel/items/destination.tscn");
+onready var text_item = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 
 func _ready():
 	carousel.state = "input"
-	for dest in Ship.port.destinations:
-		var item = item_destination.instance()
-		item.setText(dest.name_text)
-		carousel.insert(item)
-	
-#	var rum = Sprite.new();
-#	var wheat = Sprite.new();
-#	var wood = Sprite.new();
-#	rum.texture = load("res://gfx/resources/rum.png");
-#	wood.texture = load("res://gfx/resources/timber.png");
-#	wheat.texture = load("res://gfx/resources/wheat.png");
-#
-#	carousel.insert(rum);
-#	carousel.insert(wood);
-#	carousel.insert(wheat);
 
+	carousel.insert_text("sail")
+	carousel.insert_text("trade")
+	carousel.insert_text("town")
+	
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		Ship.port = Ship.port.destinations[carousel.selected]

@@ -1,7 +1,7 @@
 extends Node2D
 
 const Util = preload("util.gd");
-onready var item_destination = preload("res://scenes/subscenes/carousel/items/destination.tscn");
+onready var text_item = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 
 var items := [];
 var radius := 128;
@@ -51,3 +51,9 @@ func insert(item):
 	items.push_back(item);
 	self.add_child(item);
 	_refresh_positions();
+	
+func insert_text(text):	
+	var item = text_item.instance()
+	item.setText(text)
+	insert(item)
+	

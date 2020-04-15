@@ -1,6 +1,6 @@
 extends Control
 
-onready var item_destination = preload("res://scenes/subscenes/carousel/items/destination.tscn");
+onready var item_destination = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 var day_left = 1
 
 func _process(delta):
