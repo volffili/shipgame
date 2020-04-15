@@ -8,7 +8,7 @@ var radius := 128;
 var rot : float = 0;
 var target_angle : float = 0;
 var sin_multiplier := 0.5;
-var state := "input";
+var state := "none";
 var selected := 0
 
 func _ready():

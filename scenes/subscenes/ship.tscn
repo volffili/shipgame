@@ -78,7 +78,6 @@ material = ExtResource( 2 )
 position = Vector2( -6, -86 )
 frames = SubResource( 7 )
 animation = "Wind"
-frame = 2
 playing = true
 
 [node name="Observer" type="AnimatedSprite" parent="."]
@@ -86,4 +85,5 @@ material = ExtResource( 2 )
 position = Vector2( 10, -67 )
 frames = ExtResource( 1 )
 animation = "Idle"
+frame = 2
 playing = true

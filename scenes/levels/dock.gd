@@ -4,8 +4,9 @@ onready var carousel = $Carousel;
 onready var item_destination = preload("res://scenes/subscenes/carousel/items/destination.tscn");
 
 func _ready():
+	carousel.state = "input"
 	for dest in Ship.port.destinations:
-		var item = item_destination.instance();
+		var item = item_destination.instance()
 		item.setText(dest.name_text)
 		carousel.insert(item)
 	
