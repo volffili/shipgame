@@ -8,6 +8,7 @@ signal date_change
 
 func _ready():
 	self.set_date(1,1,1570)
+	emit_signal("date_change",get_date_as_string())
 
 func set_date(d,m,y):
 	if (d < 1 || m < 1 || y < 1):
