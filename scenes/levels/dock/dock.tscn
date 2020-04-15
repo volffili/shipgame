@@ -92,6 +92,7 @@ texture = ExtResource( 4 )
 [node name="Pier" type="AnimatedSprite" parent="."]
 position = Vector2( 320, 248.5 )
 frames = SubResource( 8 )
+frame = 5
 playing = true
 __meta__ = {
 "_editor_description_": ""
@@ -100,5 +101,5 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 354, 277.5 )
 frames = SubResource( 14 )
-frame = 3
+frame = 1
 playing = true

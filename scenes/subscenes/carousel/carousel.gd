@@ -8,7 +8,7 @@ var radius := 128;
 var rot : float = 0;
 var target_angle : float = 0;
 var sin_multiplier := 0.5;
-var state := "none";
+var state := "input";
 var selected := 0
 
 func _ready():
@@ -56,4 +56,4 @@ func insert_text(text):
 	var item = text_item.instance()
 	item.setText(text)
 	insert(item)
-	
+
