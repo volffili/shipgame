@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shipnaked.png-c77fbacdad2cd6f04409a778305b2141.stex"
+path="res://.import/bricks.png-0a104404d311c360b416bf06bb7ae547.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://gfx/ship/shipnaked.png"
-dest_files=[ "res://.import/shipnaked.png-c77fbacdad2cd6f04409a778305b2141.stex" ]
+source_file="res://gfx/resources/bricks.png"
+dest_files=[ "res://.import/bricks.png-0a104404d311c360b416bf06bb7ae547.stex" ]
 
 [params]
 
