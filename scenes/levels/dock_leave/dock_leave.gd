@@ -11,4 +11,5 @@ func _ready():
 func _on_carousel_accept(selected_port):
 	Ship.port = selected_port
 	Ship.days_to_dest = 5
+	Calendar.next_day()
 	get_tree().change_scene("res://scenes/levels/open_sea/open_sea.tscn")

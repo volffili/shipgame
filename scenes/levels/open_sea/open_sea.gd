@@ -10,10 +10,11 @@ func _process(delta):
 		next_day()
 		
 func next_day():
-	Calendar.next_day()
 	Ship.days_to_dest -= 1
-	if Ship.days_to_dest == 0:
+	Calendar.next_day()
+	if Ship.days_to_dest <= 0:
 		get_tree().change_scene("res://scenes/levels/dock/dock.tscn")
+		return
 		
-	if randf() < 0.3:
+	if randf() < 0.1:
 		get_tree().change_scene("res://scenes/levels/open_sea/events/storm.tscn")
