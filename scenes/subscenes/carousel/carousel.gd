@@ -1,6 +1,5 @@
 extends Node2D
 
-const Util = preload("res://general_scripts/util.gd");
 onready var text_item = preload("res://scenes/subscenes/carousel/items/text_item.tscn");
 
 signal carousel_accept

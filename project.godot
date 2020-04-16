@@ -20,12 +20,13 @@ run/main_scene="res://scenes/levels/dock/dock.tscn"
 
 [autoload]
 
+Util="*res://general_scripts/util.gd"
+Calendar="*res://general_scripts/calendar.gd"
 PortRoyal="*res://general_scripts/state/ports/port_royal.gd"
 Tortuga="*res://general_scripts/state/ports/tortuga.gd"
 Margarita="*res://general_scripts/state/ports/margarita.gd"
 Map="*res://general_scripts/state/map.gd"
 Ship="*res://general_scripts/state/ship.gd"
-Calendar="*res://general_scripts/calendar.gd"
 UI="*res://scenes/subscenes/ui/ui.tscn"
 
 [display]

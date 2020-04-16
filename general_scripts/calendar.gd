@@ -1,8 +1,8 @@
 extends Node
 
-var day : int
-var month : int
-var year : int
+var day := 1
+var month := 1
+var year := 1570
 
 signal date_change
 
@@ -19,6 +19,18 @@ func set_date(d,m,y):
 	_transfer_days_to_months()
 	_transfer_months_to_years()
 
+func get_day():
+	return day
+
+func get_month():
+	return month
+	
+func get_year():
+	return year
+
+func get_date_as_array():
+	return [get_day(),get_month(),get_year()]
+	
 func get_date_as_string():
 	return str(day)+"."+str(month)+"."+str(year);
 
