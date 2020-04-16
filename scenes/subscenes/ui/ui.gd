@@ -6,7 +6,6 @@ onready var port_label = get_node("./Vbox/Port");
 func _ready():
 	Calendar.connect("date_change", self, "_on_date_change")
 	_on_date_change(Calendar.get_date_as_string())
-	date_label.set_text(Calendar.get_date_as_string())
 
 func _on_date_change(date:String):
 	date_label.set_text(date)
