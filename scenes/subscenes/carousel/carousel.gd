@@ -58,6 +58,6 @@ func insert(item):
 	
 func insert_text(text):	
 	var item = text_item.instance()
-	item.setText(text)
+	item.set_text(text)
 	insert(item)
 

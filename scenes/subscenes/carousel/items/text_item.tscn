@@ -3,7 +3,7 @@
 [ext_resource path="res://gfx/fonts/versa.tres" type="DynamicFont" id=1]
 [ext_resource path="res://scenes/subscenes/carousel/items/text_item.gd" type="Script" id=2]
 
-[node name="CarouselItemDestination" type="Node2D"]
+[node name="TextItem" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="Text" type="Label" parent="."]

@@ -1,5 +1,5 @@
 extends Node2D
 
-func setText(text):
+func set_text(text):
 	$Text.set_text(text);
 	
