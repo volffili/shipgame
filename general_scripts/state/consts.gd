@@ -1,0 +1,3 @@
+extends Node
+
+const AVERAGE_TOWN_POPULATION = 3000

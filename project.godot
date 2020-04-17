@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Warehouse",
+"language": "GDScript",
+"path": "res://general_scripts/state/warehouse.gd"
+} ]
 _global_script_class_icons={
-
+"Warehouse": ""
 }
 
 [application]
@@ -20,11 +25,13 @@ run/main_scene="res://scenes/levels/dock/dock.tscn"
 
 [autoload]
 
+Consts="*res://general_scripts/state/Consts.gd"
 Util="*res://general_scripts/util.gd"
 Calendar="*res://general_scripts/calendar.gd"
-PortRoyal="*res://general_scripts/state/ports/port_royal.gd"
-Tortuga="*res://general_scripts/state/ports/tortuga.gd"
-Margarita="*res://general_scripts/state/ports/margarita.gd"
+Goods="*res://general_scripts/state/goods.gd"
+PortRoyal="*res://general_scripts/state/towns/port_royal.gd"
+Tortuga="*res://general_scripts/state/towns/tortuga.gd"
+Margarita="*res://general_scripts/state/towns/margarita.gd"
 Map="*res://general_scripts/state/map.gd"
 Ship="*res://general_scripts/state/ship.gd"
 UI="*res://scenes/subscenes/ui/ui.tscn"

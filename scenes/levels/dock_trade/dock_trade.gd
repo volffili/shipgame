@@ -22,5 +22,6 @@ func _ready():
 	for key in gfx_files:
 		var item = commodity.instance()
 		item.set_texture(gfx_folder+gfx_files[key])
-		item.set_price(Ship.port.get_price(key))
+		item.set_buy_price(Ship.port.get_buy_price(key))
+		item.set_sell_price(Ship.port.get_sell_price(key))
 		carousel.insert(item)
