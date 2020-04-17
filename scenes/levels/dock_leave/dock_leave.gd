@@ -5,7 +5,7 @@ onready var carousel = $Carousel;
 func _ready():
 	carousel.connect("carousel_accept", self, "_on_carousel_accept")
 	for dest in Ship.port.destinations:
-		carousel.insert_text(dest.name_text, dest)
+		carousel.insert_text(dest.get_name(), dest)
 
 
 func _on_carousel_accept(selected_port):
